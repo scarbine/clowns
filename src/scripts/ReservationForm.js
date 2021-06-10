@@ -1,4 +1,4 @@
-import {sendRequest} from "./dataAccess.js"
+import { sendRequest } from "./dataAccess.js";
 
 export const ReservationForm = () => {
   let html = `
@@ -61,6 +61,7 @@ mainContainer.addEventListener("click", (event) => {
       duration: duration,
     };
 
+    
     sendRequest(sendToAPI);
   }
 });
