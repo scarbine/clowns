@@ -13,13 +13,48 @@
   "reservations": [
     {
       "id": 1,
-      "clownId": 1,
       "parentName": "John",
       "childName": "Holden",
       "numberOfChildren": 5,
       "address": "321 Dream Lane",
       "date": "3/12/21",
-      "duration": 3
+      "duration": 4
+    },
+    {
+      "id": 2,
+      "parentName": "James",
+      "childName": "Bella",
+      "numberOfChildren": 5,
+      "address": "321 Dream Lane",
+      "date": "3/14/21",
+      "duration": 2
+    },
+    {
+      "id": 3,
+      "parentName": "Ashley",
+      "childName": "Ian",
+      "numberOfChildren": 5,
+      "address": "321 Dream Lane",
+      "date": "3/21/21",
+      "duration": 4
+    },
+    {
+      "parentName": "Bella",
+      "childName": "Bella",
+      "numberOfChildren": "9",
+      "address": "123 Bella Drive",
+      "date": "1212-12-12",
+      "duration": "12",
+      "id": 4
+    },
+    {
+      "parentName": "Bella",
+      "childName": "Sam",
+      "numberOfChildren": "8",
+      "address": "123 Home",
+      "date": "1212-12-12",
+      "duration": "2",
+      "id": 5
     }
   ]
 }

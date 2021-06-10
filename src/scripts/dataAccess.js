@@ -17,7 +17,7 @@ export const sendRequest = (userReservationRequest) => {
 	const fetchOptions = {
 		method: "POST",
 		headers: {
-			"Content_Type" : "application.json"
+			"Content-Type" : "application.json"
 		},
 		body: JSON.stringify(userReservationRequest)
 	}
@@ -32,10 +32,19 @@ export const getReservations = () => {
 	return reservationState.reservations.map(reservation => ({...reservation}))
 }
 
-// console.log("getReservations is linked!!!");
-// let html = `<ul>`;
-
-// html += `<li class="reservation_list_item" value =""> THIS WILL BE A RESERVATION LIST ITEM </li>`;
-
-// html += `</ul>`;
-// return html;
+// export const sendRequest = (userServiceRequest) => {
+// 	const fetchOptions = {
+// 	    method: "POST",
+// 	    headers: {
+// 		"Content-Type": "application/json"
+// 	    },
+// 	    body: JSON.stringify(userServiceRequest)
+	    
+// 	}
+    
+// 	return fetch(`${API}/reservations`, fetchOptions)
+// 	    .then(response => response.json())
+// 	    .then(() => {
+// 		document.dispatchEvent(new CustomEvent("stateChanged"))
+// 	    })
+//     }
