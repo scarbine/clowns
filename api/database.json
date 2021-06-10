@@ -1,0 +1,25 @@
+{
+  "clowns": [
+    {
+      "id": 1,
+      "name": "Crusty"
+    },
+    {
+      "id": 2,
+      "name": "Leslie"
+    }
+  ],
+  "completions": [],
+  "reservations": [
+    {
+      "id": 1,
+      "clownId": 1,
+      "parentName": "John",
+      "childName": "Holden",
+      "numberOfChildren": 5,
+      "address": "321 Dream Lane",
+      "date": "3/12/21",
+      "duration": 3
+    }
+  ]
+}
