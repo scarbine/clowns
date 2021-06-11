@@ -13,7 +13,7 @@ export const ReservationForm = () => {
 			<input type="text" name="child_name" class="input"/>
 		</div>
 		<div class="field" name="fields">
-			<label class="label for="number_of_children"> Number of Children </label>
+			<label class="label for="number_of_children"> Number of Children Expected </label>
 			<input type="number" name="number_of_children" class="input"/>
 		</div>
 		<div class="field" name="fields">
@@ -30,7 +30,7 @@ export const ReservationForm = () => {
 		</div>
 		
 		<button class="button" id="submit_request"> Submit Reservation </button>
-
+		
 		</article>
 		`;
 
@@ -39,6 +39,7 @@ export const ReservationForm = () => {
 
 const mainContainer = document.querySelector("#container");
 
+// This function is activated  when the submit button is clicked and send form data to json database 
 mainContainer.addEventListener("click", (event) => {
   if (event.target.id === "submit_request") {
     const parentName = document.querySelector(
@@ -51,6 +52,8 @@ mainContainer.addEventListener("click", (event) => {
     const address = document.querySelector("input[name='address']").value;
     const date = document.querySelector("input[name='date']").value;
     const duration = document.querySelector("input[name='duration']").value;
+    const isComplete = "0"
+    const clownId = "0"
 
     const sendToAPI = {
       parentName: parentName,
@@ -59,9 +62,12 @@ mainContainer.addEventListener("click", (event) => {
       address: address,
       date: date,
       duration: duration,
+      clownId: clownId,
+      isComplete: isComplete
     };
 
     
     sendRequest(sendToAPI);
   }
 });
+
