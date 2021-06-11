@@ -1,6 +1,7 @@
-import { getCompletions } from "./dataAccess.js";
+import { fetchComplete, getCompletions } from "./dataAccess.js";
 
 export const Completions = () => {
+  fetchComplete()	
   const completions = getCompletions();
   let html = "<ul>";
   const listReservationItems = completions.map((reservation) => {

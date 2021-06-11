@@ -80,11 +80,7 @@ export const completeReservation = (id) => {
   );
   // Ask the user which clown went to the party
   const clownChoice = prompt("For Crusty type 1, for Leslie type 2. ");
-  if (clownChoice === "0") {
-    return prompt(
-      "You did not select a valid input.For Crusty type 1, for Leslie type 2. "
-    );
-  }
+ 
   // set the clownId to relevant clown
   result.clownId = clownChoice;
   // set the value of is complete to "Complete"
@@ -98,4 +94,4 @@ export const completeReservation = (id) => {
   window.alert("Your reservation is now complete.");
 };
 
-// const result = trees.find(tree => tree.startsWith("m"));
+

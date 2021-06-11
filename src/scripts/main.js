@@ -6,8 +6,8 @@ console.log("Hello, Clowns!");
 const mainContainer = document.querySelector("#container");
 
 const render = () => {
-  fetchComplete().then(
-  fetchRequest()).then(() => {
+  fetchComplete()
+  fetchRequest().then(() => {
     mainContainer.innerHTML = ClownParty();
   });
 };
