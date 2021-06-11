@@ -9,18 +9,17 @@
       "name": "Leslie"
     }
   ],
-  "completions": [],
-  "reservations": [
+  "completions": [
     {
       "parentName": "Sam",
-      "childName": "Holden",
-      "numberOfChildren": "8",
-      "address": "123 Home",
-      "date": "2020-12-02",
+      "childName": "Bella",
+      "numberOfChildren": "23",
+      "address": "123",
+      "date": "2938-12-31",
       "duration": "2",
       "clownId": "1",
-      "isComplete": "0",
-      "id": 1
+      "isComplete": "Complete",
+      "id": 3
     },
     {
       "parentName": "Sam",
@@ -30,19 +29,32 @@
       "date": "2021-04-23",
       "duration": "2",
       "clownId": "2",
-      "isComplete": "0",
+      "isComplete": "Complete",
       "id": 2
     },
     {
       "parentName": "Sam",
-      "childName": "Bella",
-      "numberOfChildren": "23",
-      "address": "123",
-      "date": "2938-12-31",
+      "childName": "Holden",
+      "numberOfChildren": "8",
+      "address": "123 Home",
+      "date": "2020-12-02",
       "duration": "2",
+      "clownId": "1",
+      "isComplete": "Complete",
+      "id": 1
+    }
+  ],
+  "reservations": [
+    {
+      "parentName": "Sam",
+      "childName": "Holden",
+      "numberOfChildren": "34",
+      "address": "1234 Home",
+      "date": "2012-12-12",
+      "duration": "12",
       "clownId": "0",
       "isComplete": "0",
-      "id": 3
+      "id": 1
     }
   ]
 }

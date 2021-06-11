@@ -1,12 +1,13 @@
 import { ClownParty } from "./ClownParty.js";
-import { fetchRequest } from "./dataAccess.js";
+import { fetchComplete, fetchRequest } from "./dataAccess.js";
 
 console.log("Hello, Clowns!");
 
 const mainContainer = document.querySelector("#container");
 
 const render = () => {
-  fetchRequest().then(() => {
+  fetchComplete().then(
+  fetchRequest()).then(() => {
     mainContainer.innerHTML = ClownParty();
   });
 };
