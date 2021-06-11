@@ -1,11 +1,12 @@
-import { getReservations, deleteReservation } from "./dataAccess.js";
+import { getReservations, deleteReservation, completeReservation } from "./dataAccess.js";
 
 export const Reservations = () => {
   const reservations = getReservations();
   let html = "<ul>"
   const listReservationItems = reservations.map((reservation) => {
     return `<li class="reservation_item" > <div class="reservation_list_item" id="reservation--${reservation.id}"> ${reservation.childName} has a party on ${reservation.date} and should last ${reservation.duration} hours. ${reservation.numberOfChildren} kids are expected at the party.</div> 
-    <button id="reservation--${reservation.id}" name="delete_button" class="delete_order_button">Delete</button> </li>`
+    <button id="reservation--${reservation.id}" name="delete_button" class="delete_order_button">Delete</button> 
+    <button id="complete--${reservation.id}" name="complete_button" class="complete_order_button">Complete</button></li>`
   });
   html += listReservationItems.join("")
   html += "</ul>"
@@ -22,4 +23,13 @@ mainContainer.addEventListener("click", (event) => {
 		deleteReservation(parseInt(reservationId))
 
 	}
+})
+
+
+
+mainContainer.addEventListener("click", (event) => {
+  if (event.target.id.startsWith("complete--")){
+    const [,reservationId] = event.target.id.split("--")
+    completeReservation(parseInt(reservationId))
+  }
 })
