@@ -52,8 +52,7 @@ mainContainer.addEventListener("click", (event) => {
     const address = document.querySelector("input[name='address']").value;
     const date = document.querySelector("input[name='date']").value;
     const duration = document.querySelector("input[name='duration']").value;
-    const isComplete = "0"
-    const clownId = "0"
+    const isComplete = false
 
     const sendToAPI = {
       parentName: parentName,
@@ -62,7 +61,7 @@ mainContainer.addEventListener("click", (event) => {
       address: address,
       date: date,
       duration: duration,
-      clownId: clownId,
+//       clownId: clownId,
       isComplete: isComplete
     };
 

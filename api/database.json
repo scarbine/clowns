@@ -1,10 +1,6 @@
 {
   "clowns": [
     {
-      "id": 0,
-      "name": "Unassigned"
-    },
-    {
       "id": 1,
       "name": "Crusty"
     },
@@ -16,17 +12,15 @@
   "completions": [
     {
       "parentName": "Sam",
-      "childName": "Holden",
-      "numberOfChildren": "28",
-      "address": "1234",
-      "date": "2001-12-04",
-      "duration": "2",
-      "clownId": "2",
-      "isComplete": "Complete",
-      "id": 4
-    }
-  ],
-  "reservations": [
+      "childName": "Bella",
+      "numberOfChildren": "10",
+      "address": "123 Home",
+      "date": "2021-04-23",
+      "duration": "3",
+      "isComplete": true,
+      "id": 2,
+      "clownId": "1"
+    },
     {
       "parentName": "Sam",
       "childName": "Holden",
@@ -34,42 +28,41 @@
       "address": "123 Home",
       "date": "2020-12-02",
       "duration": "2",
-      "clownId": "0",
-      "isComplete": "0",
-      "id": 1
-    },
-    {
-      "parentName": "Sam",
-      "childName": "Bella",
-      "numberOfChildren": "10",
-      "address": "123 Home",
-      "date": "2021-04-23",
-      "duration": "2",
-      "clownId": "0",
-      "isComplete": "0",
-      "id": 2
-    },
+      "isComplete": true,
+      "id": 1,
+      "clownId": "2"
+    }
+  ],
+  "reservations": [
     {
       "parentName": "Ashley",
       "childName": "Ian",
       "numberOfChildren": "10",
       "address": "123 Home",
       "date": "2021-02-03",
-      "duration": "2",
-      "clownId": "0",
-      "isComplete": "0",
+      "duration": "7",
+      "isComplete": false,
       "id": 3
     },
     {
-      "parentName": "Holden",
-      "childName": "Bella",
-      "numberOfChildren": "2",
-      "address": "123 Home",
-      "date": "2000-12-12",
-      "duration": "2",
-      "clownId": "0",
-      "isComplete": "0",
+      "parentName": "Sam",
+      "childName": "Holden",
+      "numberOfChildren": "28",
+      "address": "1234",
+      "date": "2001-12-04",
+      "duration": "3",
+      "isComplete": false,
       "id": 4
+    },
+    {
+      "parentName": "Sam",
+      "childName": "Holden",
+      "numberOfChildren": "28",
+      "address": "1234",
+      "date": "2001-12-04",
+      "duration": "2",
+      "isComplete": false,
+      "id": 5
     }
   ]
 }
